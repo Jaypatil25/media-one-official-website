@@ -63,11 +63,11 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-card border border-border p-8 hover:border-primary transition-all duration-300 group hover:shadow-lg"
+              className="bg-card border border-border p-4 md:p-8 hover:border-primary transition-all duration-300 group hover:shadow-lg"
             >
               <div className="w-14 h-14 bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                 <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />

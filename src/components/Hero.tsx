@@ -9,8 +9,28 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-background pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+    <section className="min-h-screen flex items-center justify-center bg-background pt-20 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Film Strip Pattern */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-5">
+          <div className="absolute top-10 left-10 w-8 h-32 bg-primary transform rotate-12"></div>
+          <div className="absolute top-20 right-20 w-8 h-32 bg-secondary transform -rotate-12"></div>
+          <div className="absolute bottom-20 left-20 w-8 h-32 bg-primary transform rotate-45"></div>
+          <div className="absolute bottom-10 right-10 w-8 h-32 bg-secondary transform -rotate-45"></div>
+        </div>
+        
+        {/* Spotlight Effects */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        
+        {/* Camera/Media Icons */}
+        <div className="absolute top-1/3 right-1/3 text-primary/20 text-6xl transform rotate-12">🎬</div>
+        <div className="absolute bottom-1/3 left-1/3 text-secondary/20 text-6xl transform -rotate-12">🎭</div>
+        <div className="absolute top-1/2 left-1/4 text-primary/15 text-4xl transform rotate-45">🎪</div>
+        <div className="absolute bottom-1/2 right-1/4 text-secondary/15 text-4xl transform -rotate-45">🎨</div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Headline */}
           <h1 className="heading-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">

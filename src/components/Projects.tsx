@@ -14,14 +14,15 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<ProjectType>("all");
 
   const projects: Project[] = [
-    { id: 1, title: "Marathi Blockbuster", year: "2024", type: "movie", image: "" },
-    { id: 2, title: "Drama Premiere", year: "2024", type: "show", image: "" },
-    { id: 3, title: "Award Night", year: "2024", type: "event", image: "" },
-    { id: 4, title: "Regional Hit Film", year: "2023", type: "movie", image: "" },
-    { id: 5, title: "TV Series Launch", year: "2023", type: "show", image: "" },
-    { id: 6, title: "Music Festival", year: "2023", type: "event", image: "" },
-    { id: 7, title: "Indie Film", year: "2023", type: "movie", image: "" },
-    { id: 8, title: "Web Series", year: "2024", type: "show", image: "" },
+    { id: 1, title: "Jabrat", year: "2026", type: "movie", image: "https://updatenownews.com/wp-content/uploads/2025/08/marathi-movie.jpg" },
+    { id: 2, title: "Ranapati Shivray Swari Agra", year: "2026", type: "movie", image: "https://cdn.district.in/movies-assets/images/cinema/_Poster%20(2)-431a3b70-eadd-11f0-a6e4-8561ba1a7e47.jpg" },
+    { id: 3, title: "Case No. 73", year: "2026", type: "movie", image: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00479263-qepvdyzzsj-portrait.jpg" },
+    { id: 4, title: "Taath Kana", year: "2025", type: "movie", image: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/tath-kana-et00336599-1762150091.jpg" },
+    { id: 5, title: "Abhanga Tukaram", year: "2025", type: "movie", image: "https://cdn.district.in/movies-assets/images/cinema/Abhanga-Tukaram_Poster-462f6f00-a281-11f0-bc10-53b4fd296cbf.jpg" },
+    { id: 6, title: "Aatli Batli Phutli", year: "2025", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BODAwM2Y2ZWItOTE2ZS00NjI1LWIxMjItNTczMjg3OWMyOTIxXkEyXkFqcGc@._V1_.jpg" },
+    { id: 7, title: "Sant Dnyaneshwaranchi Muktaai", year: "2025", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BMzA5NDBmOTQtOWJlOC00NmE0LWI1YWYtNmE4NDQxODUyNDRjXkEyXkFqcGc@._V1_.jpg" },
+    { id: 8, title: "Gharat Ganpati", year: "2024", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BN2Q5MzBjYWItNTg3ZC00M2UxLTkxZDItYTUyNDgyMTg1YmQwXkEyXkFqcGc@._V1_.jpg" },
+    ,
   ];
 
   const filters: { value: ProjectType; label: string }[] = [
@@ -50,8 +51,15 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none opacity-5">
+        <div className="absolute top-16 right-16 text-primary text-7xl transform rotate-12">🎬</div>
+        <div className="absolute bottom-16 left-16 text-secondary text-6xl transform -rotate-12">🎥</div>
+        <div className="absolute top-1/2 left-1/4 text-primary text-5xl transform rotate-30">🎭</div>
+        <div className="absolute bottom-1/3 right-1/3 text-secondary text-4xl transform -rotate-45">🎪</div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">
@@ -86,18 +94,26 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
               className="group relative aspect-[3/4] bg-secondary overflow-hidden cursor-pointer"
             >
-              {/* Placeholder for project image */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60 flex items-center justify-center">
-                <span className="heading-display text-4xl text-secondary-foreground/30">
-                  {project.title.charAt(0)}
-                </span>
-              </div>
+              {/* Project image */}
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60 flex items-center justify-center">
+                  <span className="heading-display text-4xl text-secondary-foreground/30">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
+              )}
 
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center text-primary-foreground p-6">
