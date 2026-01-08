@@ -24,11 +24,11 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         
-        {/* Camera/Media Icons */}
-        <div className="absolute top-1/3 right-1/3 text-primary/20 text-6xl transform rotate-12">🎬</div>
-        <div className="absolute bottom-1/3 left-1/3 text-secondary/20 text-6xl transform -rotate-12">🎭</div>
-        <div className="absolute top-1/2 left-1/4 text-primary/15 text-4xl transform rotate-45">🎪</div>
-        <div className="absolute bottom-1/2 right-1/4 text-secondary/15 text-4xl transform -rotate-45">🎨</div>
+        {/* Red Gradient Effects */}
+        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-gradient-to-br from-red-500/20 to-red-700/10 rounded-full blur-2xl transform rotate-12"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-40 h-40 bg-gradient-to-tl from-red-600/15 to-red-400/5 rounded-full blur-3xl transform -rotate-12"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-r from-red-500/25 to-transparent rounded-full blur-xl transform rotate-45"></div>
+        <div className="absolute bottom-1/2 right-1/4 w-28 h-28 bg-gradient-to-l from-red-700/20 to-red-500/10 rounded-full blur-2xl transform -rotate-45"></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
