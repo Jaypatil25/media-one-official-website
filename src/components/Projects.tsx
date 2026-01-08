@@ -16,7 +16,7 @@ const Projects = () => {
   const projects: Project[] = [
     { id: 1, title: "Jabrat", year: "2026", type: "movie", image: "https://updatenownews.com/wp-content/uploads/2025/08/marathi-movie.jpg" },
     { id: 2, title: "Ranapati Shivray Swari Agra", year: "2026", type: "movie", image: "https://cdn.district.in/movies-assets/images/cinema/_Poster%20(2)-431a3b70-eadd-11f0-a6e4-8561ba1a7e47.jpg" },
-    { id: 3, title: "Case No. 73", year: "2026", type: "movie", image: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00479263-qepvdyzzsj-portrait.jpg" },
+    { id: 3, title: "Case No. 73", year: "2026", type: "movie", image: "https://updatenownews.com/wp-content/uploads/2025/12/case.jpg" },
     { id: 4, title: "Taath Kana", year: "2025", type: "movie", image: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/tath-kana-et00336599-1762150091.jpg" },
     { id: 5, title: "Abhanga Tukaram", year: "2025", type: "movie", image: "https://cdn.district.in/movies-assets/images/cinema/Abhanga-Tukaram_Poster-462f6f00-a281-11f0-bc10-53b4fd296cbf.jpg" },
     { id: 6, title: "Aatli Batli Phutli", year: "2025", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BODAwM2Y2ZWItOTE2ZS00NjI1LWIxMjItNTczMjg3OWMyOTIxXkEyXkFqcGc@._V1_.jpg" },
