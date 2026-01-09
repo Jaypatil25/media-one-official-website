@@ -21,8 +21,7 @@ const Projects = () => {
     { id: 5, title: "Abhanga Tukaram", year: "2025", type: "movie", image: "https://cdn.district.in/movies-assets/images/cinema/Abhanga-Tukaram_Poster-462f6f00-a281-11f0-bc10-53b4fd296cbf.jpg" },
     { id: 6, title: "Aatli Batli Phutli", year: "2025", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BODAwM2Y2ZWItOTE2ZS00NjI1LWIxMjItNTczMjg3OWMyOTIxXkEyXkFqcGc@._V1_.jpg" },
     { id: 7, title: "Sant Dnyaneshwaranchi Muktaai", year: "2025", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BMzA5NDBmOTQtOWJlOC00NmE0LWI1YWYtNmE4NDQxODUyNDRjXkEyXkFqcGc@._V1_.jpg" },
-    { id: 8, title: "Gharat Ganpati", year: "2024", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BN2Q5MzBjYWItNTg3ZC00M2UxLTkxZDItYTUyNDgyMTg1YmQwXkEyXkFqcGc@._V1_.jpg" },
-    ,
+    { id: 8, title: "Gharat Ganpati", year: "2024", type: "movie", image: "https://m.media-amazon.com/images/M/MV5BN2Q5MzBjYWItNTg3ZC00M2UxLTkxZDItYTUyNDgyMTg1YmQwXkEyXkFqcGc@._V1_.jpg" }
   ];
 
   const filters: { value: ProjectType; label: string }[] = [
@@ -132,9 +131,9 @@ const Projects = () => {
         {/* Many More Section */}
         <div className="text-center mt-12">
           <div className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
-            <span className="text-2xl"></span>
+            <span className="text-2xl">🎬</span>
             <span className="text-lg font-semibold text-foreground">& Many More...</span>
-            <span className="text-2xl"></span>
+            <span className="text-2xl">🎭</span>
           </div>
           <p className="text-muted-foreground mt-4 text-sm">
             Over 50+ successful campaigns across movies, shows, and events
