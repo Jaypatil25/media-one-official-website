@@ -128,6 +128,18 @@ const Projects = () => {
             </div>
           ))}
         </div>
+        
+        {/* Many More Section */}
+        <div className="text-center mt-12">
+          <div className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
+            <span className="text-2xl"></span>
+            <span className="text-lg font-semibold text-foreground">& Many More...</span>
+            <span className="text-2xl"></span>
+          </div>
+          <p className="text-muted-foreground mt-4 text-sm">
+            Over 50+ successful campaigns across movies, shows, and events
+          </p>
+        </div>
       </div>
     </section>
   );

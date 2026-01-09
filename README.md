@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Media One 🎬
 
-## Project info
+**The One That Does It All** - Premier Entertainment PR Agency
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## About Media One 🌟
 
-## How can I edit this code?
+Media One is a leading entertainment Public Relations agency specializing in comprehensive promotional campaigns for the Marathi entertainment industry. We are the powerhouse behind successful movie promotions, digital PR campaigns, drama promotions, and event coverage.
 
-There are several ways of editing your application.
+### Our Expertise 🎯
 
-**Use Lovable**
+- **🎥 Movie Promotions** - Theatrical releases, OTT content, and film festivals
+- **📱 Digital & Influencer PR** - Strategic partnerships with top content creators
+- **🎭 Drama & Show Promotions** - TV shows, web series, and theatrical plays
+- **📺 Event PR & Media Coverage** - End-to-end event publicity and live coverage
+- **🚀 Social Media Campaigns** - Viral marketing and trending conversations
+- **🤝 Creator Collaborations** - Direct connections with Marathi YouTubers and podcasters
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Our Network 🌐
 
-Changes made via Lovable will be committed automatically to this repo.
+We maintain strong relationships with:
+- **Leading Marathi Media Houses** - Planet Marathi, Zee Marathi, Colors Marathi
+- **Top Content Creators** - 50+ industry partners and influencers
+- **Entertainment Platforms** - Sony Marathi, Star Pravah, Shemaroo Marathi
+- **Digital Promoters** - Extensive network of regional content creators
 
-**Use your preferred IDE**
+## Key Statistics 📊
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ⭐ **10+ Years** of industry experience
+- 🎬 **500+ Projects** successfully delivered
+- 👥 **100M+ Impressions** generated across campaigns
+- 🤝 **50+ Industry Partners** in our network
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology Stack 💻
 
-Follow these steps:
+Our website is built with modern technologies:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend**: React + TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Build Tool**: Vite
+- **Deployment**: Modern web hosting
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Services Portfolio 🎪
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Recent Projects
+- **Jabrat** (2026) - Upcoming Marathi blockbuster
+- **Ranapati Shivray Swari Agra** (2026) - Historical drama
+- **Case No. 73** (2026) - Thriller promotion
+- **Taath Kana** (2025) - Regional hit campaign
+- **& Many More Projects...** - Over 100+ successful campaigns
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Contact Us 📞
 
-**Edit a file directly in GitHub**
+Ready to promote your next project? Let's create something extraordinary together!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**Media One PR Agency**  
+*Entertainment PR | Movie Promotion | Drama | Events*
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*"From concept to spotlight - we make entertainment unforgettable."* ✨
