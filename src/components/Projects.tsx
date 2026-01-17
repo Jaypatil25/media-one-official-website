@@ -130,12 +130,12 @@ const Projects = () => {
         
         {/* Many More Section */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-card border border-border hover:border-primary transition-all duration-300 cursor-pointer group">
-            <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-base font-medium text-foreground group-hover:text-primary transition-colors">View Complete Portfolio</span>
-            <div className="w-2 h-2 bg-secondary rounded-full"></div>
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl">
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+            <span className="text-lg font-semibold">View Complete Portfolio</span>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
           </div>
-          <p className="text-muted-foreground mt-3 text-sm">
+          <p className="text-muted-foreground mt-4 text-sm font-medium">
             50+ successful campaigns delivered
           </p>
         </div>
