@@ -76,7 +76,7 @@ const Projects = () => {
         </div>
 
         {/* Filters */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        {/* <div className="flex justify-center gap-4 mb-12 flex-wrap">
           {filters.map((filter) => (
             <button
               key={filter.value}
@@ -90,7 +90,7 @@ const Projects = () => {
               {filter.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
