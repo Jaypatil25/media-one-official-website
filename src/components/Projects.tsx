@@ -132,7 +132,7 @@ const Projects = () => {
         <div className="text-center mt-12">
           <div className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl">
             <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-            <span className="text-lg font-semibold">View Complete Portfolio</span>
+            <span className="text-lg font-semibold">& Many More...</span>
             <div className="w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
           </div>
           <p className="text-muted-foreground mt-4 text-sm font-medium">
