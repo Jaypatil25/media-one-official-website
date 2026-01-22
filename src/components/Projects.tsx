@@ -102,7 +102,7 @@ const Projects = () => {
             >
               {/* Project image */}
               {project.image ? (
-                <img
+                <OptimizedImage
                   src={project.image}
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover"
