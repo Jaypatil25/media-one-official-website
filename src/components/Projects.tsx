@@ -1,4 +1,5 @@
 import { useState } from "react";
+import OptimizedImage from "./OptimizedImage";
 
 type ProjectType = "all" | "movie" | "show" | "event";
 
