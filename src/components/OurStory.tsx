@@ -27,6 +27,19 @@ const OurStory = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Story Content */}
           <div className="relative">
+            {/* Founder Section */}
+            <div className="flex items-center gap-4 mb-8 p-6 bg-card border border-border">
+              <img 
+                src="https://media.licdn.com/dms/image/v2/D4D03AQEj-Kf81CnroQ/profile-displayphoto-shrink_800_800/B4DZb44zEBG8Ac-/0/1747932363118?e=1770854400&v=beta&t=ij9RXPGzIwRp2dvKM2JL6rfPeyzgLyN-W3-n0qQMLUk"
+                alt="Ganesh Gargote - Founder"
+                className="w-16 h-16 rounded-full object-cover border-2 border-primary"
+              />
+              <div>
+                <h3 className="heading-display text-lg text-foreground">Ganesh Gargote</h3>
+                <p className="text-primary text-sm font-medium">Founder & CEO</p>
+              </div>
+            </div>
+            
             <Quote className="w-12 h-12 text-primary/20 mb-6" />
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
