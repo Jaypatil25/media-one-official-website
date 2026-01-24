@@ -124,6 +124,14 @@ const Timeline = () => {
     { id: "industry", label: "Industry Evolution", icon: TrendingUp }
   ];
 
+  const getCurrentData = () => {
+    if (activeTab === "milestones") return timelineData.milestones;
+    if (activeTab === "campaigns") return timelineData.campaigns;
+    return timelineData.industry;
+  };
+
+  const currentData = getCurrentData();
+
   return (
     <section id="timeline" className="py-20 md:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,7 +173,7 @@ const Timeline = () => {
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:transform md:-translate-x-0.5" />
 
           <div className="space-y-12">
-            {timelineData[activeTab].map((item, index) => (
+            {currentData.map((item, index) => (
               <div
                 key={index}
                 className={`relative flex flex-col md:flex-row items-start md:items-center gap-8 ${
