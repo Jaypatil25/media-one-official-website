@@ -4,8 +4,6 @@ import logo from "@/assets/media-one-logo.jpg";
 const Footer = () => {
   const quickLinks = [
     { href: "#about", label: "About" },
-    { href: "#our-story", label: "Our Story" },
-    { href: "#timeline", label: "Timeline" },
     { href: "#services", label: "Services" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
