@@ -1,6 +1,9 @@
 import { ArrowRight, Play } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -34,10 +37,10 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           {/* Headline */}
           <h1 className="heading-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 animate-slide-up">
-            <span className="text-primary">Media</span>{" "}
-            <span className="text-secondary">One</span>
+            <span className="text-primary">{t('hero.title').split(' ')[0]}</span>{" "}
+            <span className="text-secondary">{t('hero.title').split(' ')[1] || 'One'}</span>
             <span className="block mt-2 text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground/80">
-              The One That Does It All
+              {t('hero.subtitle')}
             </span>
           </h1>
 
@@ -51,7 +54,7 @@ const Hero = () => {
 
           {/* Sub-headline */}
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 tracking-wide animate-fade-in" style={{animationDelay: '0.3s'}}>
-            Entertainment PR | Movie Promotion | Drama | Events
+            {t('hero.tagline')}
           </p>
 
           {/* CTA Buttons */}
@@ -60,7 +63,7 @@ const Hero = () => {
               onClick={() => scrollToSection("#contact")}
               className="group bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out flex items-center gap-2 w-full sm:w-auto justify-center hover:shadow-lg hover:-translate-y-0.5"
             >
-              Work With Us
+              {t('hero.cta1')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
             <button
@@ -68,7 +71,7 @@ const Hero = () => {
               className="group border-2 border-secondary text-secondary px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 ease-out flex items-center gap-2 w-full sm:w-auto justify-center hover:shadow-lg hover:-translate-y-0.5"
             >
               <Play className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-              View Our Work
+              {t('hero.cta2')}
             </button>
           </div>
         </div>
