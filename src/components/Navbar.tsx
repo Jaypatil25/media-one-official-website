@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageToggle from "@/components/LanguageToggle";
 import logo from "@/assets/media-one-logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#our-story", label: "Our Story" },
-    { href: "#services", label: "Services" },
-    { href: "#partners", label: "Partners" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "#about", label: t('nav.about') },
+    { href: "#our-story", label: t('nav.ourStory') },
+    { href: "#services", label: t('nav.services') },
+    { href: "#partners", label: t('nav.partners') },
+    { href: "#projects", label: t('nav.projects') },
+    { href: "#contact", label: t('nav.contact') },
   ];
 
   const scrollToSection = (href: string) => {
@@ -42,11 +45,12 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
+            <LanguageToggle />
             <button
               onClick={() => scrollToSection("#contact")}
               className="bg-primary text-primary-foreground px-6 py-2.5 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-0.5"
             >
-              Work With Us
+              {t('nav.workWithUs')}
             </button>
           </div>
 
@@ -73,11 +77,14 @@ const Navbar = () => {
                   {link.label}
                 </button>
               ))}
+              <div className="px-2 py-2">
+                <LanguageToggle />
+              </div>
               <button
                 onClick={() => scrollToSection("#contact")}
                 className="bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out mt-2 hover:shadow-lg"
               >
-                Work With Us
+                {t('nav.workWithUs')}
               </button>
             </div>
           </div>
