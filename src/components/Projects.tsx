@@ -1,5 +1,4 @@
 import { useState } from "react";
-import OptimizedImage from "./OptimizedImage";
 
 type ProjectType = "all" | "movie" | "show" | "event";
 
@@ -102,10 +101,11 @@ const Projects = () => {
             >
               {/* Project image */}
               {project.image ? (
-                <OptimizedImage
+                <img
                   src={project.image}
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
                 />
               ) : (
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-secondary/60 flex items-center justify-center">
