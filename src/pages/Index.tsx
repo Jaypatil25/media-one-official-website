@@ -5,6 +5,7 @@ import OurStory from "@/components/OurStory";
 import Services from "@/components/Services";
 import Partners from "@/components/Partners";
 import Projects from "@/components/Projects";
+import Awards from "@/components/Awards";
 import WhyUs from "@/components/WhyUs";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -28,6 +29,7 @@ const Index = () => {
         <Services />
         <Partners />
         <Projects />
+        <Awards />
         <WhyUs />
         <CTA />
       </main>
