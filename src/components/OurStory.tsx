@@ -44,19 +44,15 @@ const OurStory = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Throughout the first decade of this 21st century, the <strong className="text-foreground">Marathi Entertainment Industry</strong> has witnessed exponential growth. Media One takes pride in being committed to help Marathi films, theatre, television and all other types of cultural events taste the glory of success.
+                The <strong className="text-foreground">Marathi Entertainment Industry</strong> has witnessed exponential growth in the 21st century. Media One is committed to helping Marathi films, theatre, television, and cultural events achieve success.
               </p>
               
               <p>
-                We bring about a well-organized blend of all the innovatively evolving equations required for the publicity of pioneering projects launched by a platoon of fresh talent - next generation producers, technicians, directors, and actors of worthy potential.
+                We bring a well-organized blend of innovative publicity strategies for pioneering projects by next-generation producers, directors, technicians, and actors.
               </p>
               
               <p>
-                Media One has fast emerged as a <strong className="text-primary">one-point destination</strong> indulged in transforming the most evocative and ambitious visions of fresh talent from the Marathi entertainment industry into reality.
-              </p>
-              
-              <p>
-                In this fierce competition, knowing fully well the significance of publicity's immense power, Media One with its dedicated team has made all publicity services available under a single roof - be it advertising, public relations, organizing events and seminars, or tapping other promotional platforms.
+                Media One has emerged as a <strong className="text-primary">one-point destination</strong> transforming ambitious visions of fresh talent into reality. Our dedicated team offers all publicity services under one roof - advertising, public relations, events, and promotional platforms.
               </p>
             </div>
 
