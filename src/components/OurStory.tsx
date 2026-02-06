@@ -36,23 +36,28 @@ const OurStory = () => {
               />
               <div>
                 <h3 className="heading-display text-lg text-foreground">Ganesh Gargote</h3>
-                <p className="text-primary text-sm font-medium">Founder & CEO</p>
+                <p className="text-primary text-sm font-medium">Founder & Proprietor</p>
+                <p className="text-xs text-muted-foreground mt-1">Since 1994 · 32 Years</p>
               </div>
             </div>
             
             <Quote className="w-12 h-12 text-primary/20 mb-6" />
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                The <strong className="text-foreground">Marathi Entertainment Industry</strong> has witnessed exponential growth in the 21st century. Media One is committed to helping Marathi films, theatre, television, and cultural events achieve success.
+              <p className="text-foreground font-medium">
+                "Since 1994, I've witnessed the <strong>Marathi Entertainment Industry</strong> transform and grow exponentially. Media One was born from a commitment to help our films, theatre, television, and cultural events achieve the success they deserve.
               </p>
               
               <p>
-                We bring a well-organized blend of innovative publicity strategies for pioneering projects by next-generation producers, directors, technicians, and actors.
+                We've built a well-organized blend of innovative publicity strategies for pioneering projects by the next generation of producers, directors, technicians, and actors. Media One has emerged as a <strong className="text-primary">one-point destination</strong> transforming ambitious visions into reality.
               </p>
               
               <p>
-                Media One has emerged as a <strong className="text-primary">one-point destination</strong> transforming ambitious visions of fresh talent into reality. Our dedicated team offers all publicity services under one roof - advertising, public relations, events, and promotional platforms.
+                In this competitive landscape, understanding publicity's immense power, my dedicated team has brought all services under one roof - advertising, public relations, events, and promotional platforms. We believe the merit of publicity is more significant than the number of mediums available.
+              </p>
+              
+              <p className="text-foreground font-medium">
+                Today, Media One has successfully served over <strong className="text-primary">300+ films, plays, reality shows, and cultural events</strong>. This journey wouldn't be possible without your precious support."
               </p>
             </div>
 
