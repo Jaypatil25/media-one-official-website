@@ -30,7 +30,7 @@ const OurStory = () => {
             {/* Founder Section */}
             <div className="flex items-center gap-4 mb-8 p-6 bg-card border border-border">
               <img 
-                src="https://media.licdn.com/dms/image/v2/D4D03AQEj-Kf81CnroQ/profile-displayphoto-shrink_400_400/B4DZb44zEBG8Ag-/0/1747932363118?e=1775088000&v=beta&t=Xu5UqsrEclz7Qc-rAn9A77h5C6_DyaQn9W8fHLmXr18"
+                src="https://m.media-amazon.com/images/M/MV5BODJkMGI0M2QtMTBiZS00YjVmLWI4YTgtNmMxNWViMzk3ZWY4XkEyXkFqcGc@._V1_FMjpg_UY5616_.jpg"
                 alt="Ganesh Gargote - Founder"
                 className="w-16 h-16 rounded-full object-cover border-2 border-primary"
               />
