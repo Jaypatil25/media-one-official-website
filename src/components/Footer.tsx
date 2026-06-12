@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="Media One" className="h-12 w-auto mb-6" />
+            <img src={logo} alt="Media One" width={120} height={48} loading="lazy" className="h-12 w-auto mb-6" />
             <p className="text-muted-foreground max-w-md mb-6">
               Media One is a leading entertainment PR agency specializing in 
               movie promotions, digital PR, drama promotions, and event media 

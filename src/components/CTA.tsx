@@ -1,11 +1,10 @@
 import { ArrowRight } from "lucide-react";
 
 const CTA = () => {
-  const scrollToContact = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
     const element = document.querySelector("#contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -19,13 +18,14 @@ const CTA = () => {
             Let us create the buzz your project deserves. Partner with Media One 
             for impactful entertainment PR.
           </p>
-          <button
-            onClick={scrollToContact}
+          <a
+            href="#contact"
+            onClick={handleClick}
             className="group bg-primary text-primary-foreground px-10 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 inline-flex items-center gap-2"
           >
             Let's Create the Buzz
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

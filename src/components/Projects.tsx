@@ -104,6 +104,8 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  width={300}
+                  height={400}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                 />

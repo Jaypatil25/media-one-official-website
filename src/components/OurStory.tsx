@@ -32,6 +32,9 @@ const OurStory = () => {
               <img 
                 src="https://m.media-amazon.com/images/M/MV5BODJkMGI0M2QtMTBiZS00YjVmLWI4YTgtNmMxNWViMzk3ZWY4XkEyXkFqcGc@._V1_FMjpg_UY5616_.jpg"
                 alt="Ganesh Gargote - Founder"
+                width={64}
+                height={64}
+                loading="lazy"
                 className="w-16 h-16 rounded-full object-cover border-2 border-primary"
               />
               <div>

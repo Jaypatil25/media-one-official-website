@@ -82,9 +82,11 @@ const Partners = () => {
                   <img
                     src={partner.image}
                     alt={partner.name}
+                    width={160}
+                    height={160}
+                    loading="lazy"
                     className={`w-full h-full ${partner.name === "Marathi Times" ? "object-contain" : "object-cover"} ${partner.name === "Marathi Bigg Boss" || partner.name === "Marathi Bigg Boss 5" || partner.name === "Sony Marathi" ? "rounded-full" : ""} ${partner.name === "Shemaroo Marathi" || partner.name === "Fakt Marathi" || partner.name === "Colors Marathi" || partner.name === "Star Pravah" ? "rounded-lg" : ""}`}
                     onError={(e) => {
-                      console.log(`Failed to load image for ${partner.name}:`, partner.image);
                       e.currentTarget.style.display = 'none';
                     }}
                   />

@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center smooth-hover">
-            <img src={logo} alt="Media One" className="h-10 md:h-12 w-auto" />
+            <img src={logo} alt="Media One" width={120} height={48} loading="eager" fetchPriority="high" className="h-10 md:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
