@@ -17,7 +17,8 @@ const Navbar = () => {
     { href: "#contact", label: t('nav.contact') },
   ];
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -37,21 +38,23 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.href}
-                onClick={() => scrollToSection(link.href)}
+                href={link.href}
+                onClick={(e) => scrollToSection(e, link.href)}
                 className="text-foreground/80 hover:text-primary transition-all duration-300 ease-out text-sm font-medium tracking-wide uppercase animate-underline"
               >
                 {link.label}
-              </button>
+              </a>
             ))}
             <LanguageToggle />
-            <button
-              onClick={() => scrollToSection("#contact")}
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, "#contact")}
               className="bg-primary text-primary-foreground px-6 py-2.5 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-0.5"
             >
               {t('nav.workWithUs')}
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,23 +72,25 @@ const Navbar = () => {
           <div className="md:hidden py-4 border-t border-border/50 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <button
+                <a
                   key={link.href}
-                  onClick={() => scrollToSection(link.href)}
+                  href={link.href}
+                  onClick={(e) => scrollToSection(e, link.href)}
                   className="text-foreground/80 hover:text-primary transition-all duration-300 ease-out text-sm font-medium tracking-wide uppercase text-left py-2 hover:bg-primary/5 rounded-md px-2"
                 >
                   {link.label}
-                </button>
+                </a>
               ))}
               <div className="px-2 py-2">
                 <LanguageToggle />
               </div>
-              <button
-                onClick={() => scrollToSection("#contact")}
-                className="bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out mt-2 hover:shadow-lg"
+              <a
+                href="#contact"
+                onClick={(e) => scrollToSection(e, "#contact")}
+                className="bg-primary text-primary-foreground px-6 py-3 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out mt-2 hover:shadow-lg text-center"
               >
                 {t('nav.workWithUs')}
-              </button>
+              </a>
             </div>
           </div>
         )}

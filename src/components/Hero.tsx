@@ -4,7 +4,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Hero = () => {
   const { t } = useLanguage();
   
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -59,20 +60,22 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <button
-              onClick={() => scrollToSection("#contact")}
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, "#contact")}
               className="group bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-primary/90 transition-all duration-300 ease-out flex items-center gap-2 w-full sm:w-auto justify-center hover:shadow-lg hover:-translate-y-0.5"
             >
               {t('hero.cta1')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
-            <button
-              onClick={() => scrollToSection("#projects")}
+            </a>
+            <a
+              href="#projects"
+              onClick={(e) => scrollToSection(e, "#projects")}
               className="group border-2 border-secondary text-secondary px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 ease-out flex items-center gap-2 w-full sm:w-auto justify-center hover:shadow-lg hover:-translate-y-0.5"
             >
               <Play className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               {t('hero.cta2')}
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -10,7 +10,8 @@ const Footer = () => {
     { href: "#contact", label: "Contact" },
   ];
 
-  const scrollToSection = (href: string) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -43,12 +44,13 @@ const Footer = () => {
             <ul className="space-y-4">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleClick(e, link.href)}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {link.label}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
